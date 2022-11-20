@@ -23,7 +23,7 @@
       padding-bottom: 200px;
       background-image: var(--gradient), url(../images/hero-bg.jpeg);
       @include retina {
-        background-image: var(--gradient), url(../images/hero2px.jpg);
+        background-image: var(--gradient), url(../images/hero-2px.jpg);
       }
     }
 
