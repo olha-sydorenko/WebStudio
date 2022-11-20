@@ -73,8 +73,8 @@
           <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <!--
-    <section class="section features">
+
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features-list list">
@@ -86,8 +86,7 @@
               </div>
               <h3 class="features-title">Увага до деталей</h3>
               <p class="features-desc">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="item">
@@ -98,8 +97,7 @@
               </div>
               <h3 class="features-title">Пунктуальність</h3>
               <p class="features-desc">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="item">
@@ -121,14 +119,12 @@
               </div>
               <h3 class="features-title">Сучасні технології</h3>
               <p class="features-desc">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
         </div>
       </section>
-    -->
 
       <section class="activities">
         <div class="container">
@@ -155,7 +151,27 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="card">
-              <img src="./images/demianenko.jpeg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/demianenko.jpeg 1x, ./images/demianenko-2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/demianenko-1px-tab.jpg 1x, ./images/demianenko-2px-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/demianenko-1px-mob.jpg 1x, ./images/demianenko-2px-mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/demianenko.jpeg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
+
               <div class="card-text">
                 <h3 class="card-title">Ігор Дем'яненко</h3>
                 <p class="card-desc" lang="en">Product Designer</p>
@@ -192,7 +208,22 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/riepina.jpeg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="./images/riepina.jpeg 1x, ./images/riepina-2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/riepina-1px-tab.jpg 1x, ./images/riepina-2px-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/riepina-1px-mob.jpg 1x, ./images/riepina-2px-mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/riepina.jpeg" alt="Ольга Рєпіна" width="450" height="460" />
+              </picture>
+
               <div class="card-text">
                 <h3 class="card-title">Ольга Рєпіна</h3>
                 <p class="card-desc" lang="en">Frontend Developer</p>
@@ -229,7 +260,22 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/tarasov.jpeg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/tarasov.jpeg 1x, ./images/tarasov-2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tarasov-1px-tab.jpg 1x, ./images/tarasov-2px-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/tarasov-1px-mob.jpg 1x, ./images/tarasov-2px-mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/tarasov.jpeg" alt="Микола Тарасов" width="450" height="460" />
+              </picture>
+
               <div class="card-text">
                 <h3 class="card-title">Микола Тарасов</h3>
                 <p class="card-desc" lang="en">Marketing</p>
@@ -266,7 +312,22 @@
               </div>
             </li>
             <li class="card">
-              <img src="./images/iermakov.jpeg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/iermakov.jpeg 1x, ./images/iermakov-2px.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/iermakov-1px-tab.jpg 1x, ./images/iermakov-2px-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/iermakov-1px-mob.jpg 1x, ./images/iermakov-2px-mob.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/iermakov.jpeg" alt="Михайло Єрмаков" width="450" height="460" />
+              </picture>
+
               <div class="card-text">
                 <h3 class="card-title">Михайло Єрмаков</h3>
                 <p class="card-desc" lang="en">UI Designer</p>
