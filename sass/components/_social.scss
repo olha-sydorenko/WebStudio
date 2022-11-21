@@ -1,6 +1,6 @@
 .social__cta {
   display: block;
-  padding-top: 12px;
+  /*padding-top: 12px;*/
   margin-bottom: 20px;
   font-size: 14px;
   color: var(--white-color);
@@ -8,13 +8,15 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: left;
+  /*text-align: left;*/
+  text-align: center;
 }
 
 .social__list {
   display: flex;
   gap: 10px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .social__item {
