@@ -9,11 +9,14 @@
 
   &-title {
     margin-bottom: 50px;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--secondary-color);
+    @include desktop {
+      font-size: 36px;
+    }
   }
 }
 
@@ -32,7 +35,10 @@
 
   &-text {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @include desktop {
+      padding-bottom: 30px;
+    }
   }
 
   &-title {
