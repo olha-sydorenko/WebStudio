@@ -10,6 +10,9 @@
   text-transform: uppercase;
   /*text-align: left;*/
   text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .social__list {

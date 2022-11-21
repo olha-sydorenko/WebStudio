@@ -23,12 +23,12 @@
     align-items: center;
     justify-content: center;
     @include desktop {
+      display: inline-block;
       margin-right: 70px;
     }
   }
 
   &__logo {
-    /*display: inline-block;*/
     display: block;
     margin-bottom: 20px;
     @extend %logo;

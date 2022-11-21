@@ -1,16 +1,14 @@
 .client {
   &-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--secondary-color);
-    @include tablet {
-      margin-bottom: 50px;
-    }
     @include desktop {
       font-size: 36px;
+      margin-bottom: 50px;
     }
   }
 

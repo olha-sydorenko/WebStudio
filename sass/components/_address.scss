@@ -6,6 +6,10 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 60px;
+  @include desktop {
+    text-align: left;
+    margin-bottom: 0;
+  }
 
   &__list {
     display: inline-block;
