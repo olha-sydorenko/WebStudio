@@ -24,13 +24,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--white-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    max-width: 450px;
+  }
+  @include desktop {
+    max-width: 528px;
+  }
 
   &-btn {
     position: absolute;
@@ -49,12 +55,15 @@
   }
 
   &-title {
+    display: block;
+    margin: 0 auto;
     margin-bottom: 12px;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-align: center;
+    width: 370px;
     color: var(--secondary-color);
   }
 
@@ -129,7 +138,7 @@
 
 .check-label {
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -138,6 +147,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include desktop {
+    font-size: 14px;
+  }
 
   & .check-box {
     width: 16px;
