@@ -1,9 +1,14 @@
 .filter {
   &-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    @include desktop {
+        flex-wrap: nowrap;
+        justify-content: center;;
+      }
   }
 
   &-btn {
