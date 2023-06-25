@@ -5,10 +5,11 @@
     gap: 8px;
     justify-content: flex-start;
     margin-bottom: 50px;
-    @include desktop {
-        flex-wrap: nowrap;
-        justify-content: center;;
-      }
+    @include tablet {
+      margin-bottom: 30px;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
   }
 
   &-btn {
