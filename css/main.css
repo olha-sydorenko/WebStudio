@@ -894,13 +894,6 @@ img {
   text-align: left;
   color: var(--comment-color);
 }
-.modal-text:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  text-align: left;
-  color: var(--comment-color);
-}
 .modal-text::placeholder {
   font-size: 12px;
   line-height: 1.17;
@@ -979,9 +972,16 @@ img {
 
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .filter-btn {
   padding: 6px 22px;
@@ -1005,15 +1005,24 @@ img {
 
 .project-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .project-list {
+    flex-wrap: wrap;
+  }
+}
 .project-item {
-  width: calc((100% - 60px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-item:hover, .project-item:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1200px) {
+  .project-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .project-link {
   text-decoration: none;
@@ -1166,9 +1175,6 @@ img {
   outline: transparent;
 }
 .subscr__input::-moz-placeholder {
-  color: var(--white-color-transparent);
-}
-.subscr__input:-ms-input-placeholder {
   color: var(--white-color-transparent);
 }
 .subscr__input::placeholder {
